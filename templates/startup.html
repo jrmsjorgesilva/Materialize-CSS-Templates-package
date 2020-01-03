@@ -28,14 +28,18 @@
         <div class="nav-wrapper">
           <a href="" class="brand-logo"><i class="fas fa-sun"></i>Startify</a>
           <a href="" data-target="mobile-nav" class="sidenav-trigger">
-            <i class="material-icons">menu</i>
+            <i class="fas fa-bars"></i>
           </a>
           <ul class="right hide-on-med-and-down">
             <li><a href="#home">Home</a></li>
-            <li><a href="#search">busca</a></li>
-            <li><a href="#popular">popular</a></li>
-            <li><a href="#gallery">galeria</a></li>
-            <li><a href="#contact">contato</a></li>
+            <li><a href="#about">Sobre</a></li>
+            <li><a href="#services">Serviços</a></li>
+            <li><a href="#clients">Clientes</a></li>
+            <li><a href="#video">Conheça</a></li>
+            <li><a href="#team">Equipe</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#contact">Contato</a></li>
           </ul>
         </div>
       </div>
@@ -44,10 +48,14 @@
   <!-- sidenav -->
   <ul id="mobile-nav" class="sidenav">
     <li><a href="#home">Home</a></li>
-    <li><a href="#search">busca</a></li>
-    <li><a href="#popular">popular</a></li>
-    <li><a href="#gallery">galeria</a></li>
-    <li><a href="#contact">contato</a></li>
+    <li><a href="#about">Sobre</a></li>
+    <li><a href="#services">Serviços</a></li>
+    <li><a href="#clients">Clientes</a></li>
+    <li><a href="#video">Conheça</a></li>
+    <li><a href="#team">Equipe</a></li>
+    <li><a href="#blog">Blog</a></li>
+    <li><a href="#faq">FAQ</a></li>
+    <li><a href="#contact">Contato</a></li>
   </ul>
 
 
@@ -205,12 +213,26 @@
           <div class="row center">
             <h1 class="light">Startify</h1>
             <h2 class="header col s12 light cyan-text text-darken-4 wow fadeInUp" data-wow-delay="0.4s">Conheça um pouco de nossa história</h2>
-            <i class="fas fa-play fa-4x white-text"></i>
+            <a href="#modalVideo">
+              <i class="fas fa-play fa-4x white-text"></i>
+            </a>
           </div>
         </div>
       <div class="parallax"><img src="./assets/common/stock-1.jpg" alt="Unsplashed background"></div>
     </div>
   </section>
+
+  <!-- Modal Structure -->
+  <div id="modalVideo" class="modal">
+    <div class="modal-content">
+      <h4>Modal Header</h4>
+      <p>A bunch of text</p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+    </div>
+  </div>
+
   <!-- XXXXXX VIDEO SECTION XXXXXX -->
 
   <!-- ------ NEWSLETTER SECTION ------ -->
@@ -225,6 +247,22 @@
         <input type="email" placeholder="participe de nossa newsletter">
         <a href="#" type="submit" class="btn btn-large right-align" style=" margin-left: 10px;">enviar</a>
       </div>
+
+
+  <!-- Modal Trigger -->
+  <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a>
+
+  <!-- Modal Structure -->
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <h4>Modal Header</h4>
+      <p>A bunch of text</p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+    </div>
+  </div>
+
     </div>
   </section>
   <!-- XXXXXX NEWSLETTER SECTION XXXXXX -->
@@ -377,6 +415,36 @@
   </section>
   <!-- XXXXXX BLOG SECTION XXXXXX -->
 
+  <!-- SECTION FAQ -->
+
+  <section class="section section-faq scrollspy">
+    <div class="container">
+      <ul class="collapsible popout">
+        <li>
+          <div class="collapsible-header cyan"><i class="fas fa-cogs fa-4x"></i>Quantos funcionários há na empresa?</div>
+          <div class="collapsible-body"><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo dolores aliquam perferendis ut, incidunt atque delectus quis, doloremque, quas at dignissimos explicabo quisquam, voluptate excepturi aliquid accusamus neque id. Hic aut quidem vitae minima itaque blanditiis id dolores accusamus quaerat aperiam, aliquid temporibus praesentium, odio neque atque porro optio ex delectus ratione ea dicta, maxime ab.</span></div>
+        </li>
+        <li>
+          <div class="collapsible-header cyan"><i class="fas fa-cogs fa-4x"></i>Como faço para trabalhar na Startify?</div>
+          <div class="collapsible-body"><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo quaerat qui culpa earum at consequuntur unde facilis odio omnis beatae, natus obcaecati necessitatibus fuga, officiis quam quia, rerum quos laborum vitae ducimus quibusdam voluptate iusto, cupiditate perferendis eos. Odio, provident, fugit. Fuga cum nesciunt consequatur quidem, dolorem, voluptatem reprehenderit fugiat earum facere quae placeat, mollitia eius temporibus modi asperiores sunt id sapiente praesentium nostrum, alias commodi. Deserunt.</span></div>
+        </li>
+        <li>
+          <div class="collapsible-header cyan"><i class="fas fa-cogs fa-4x"></i>Quais são os serviços oferecidos pela empresa?</div>
+          <div class="collapsible-body"><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum ducimus, aperiam obcaecati deleniti, dolores ut ea, debitis placeat tempore illum tenetur, id iure nesciunt sed repellendus autem pariatur. Itaque sit, enim nobis in minus delectus recusandae soluta non velit explicabo nostrum, voluptates quos, sequi fugiat repudiandae quas a repellendus nisi sed maxime natus labore qui atque ipsam ducimus! Voluptates deleniti qui eveniet illo natus nihil, cum tempora, incidunt quisquam, repellendus tenetur minus reprehenderit deserunt molestiae earum ducimus maxime debitis, dolores ipsa molestias. Adipisci, aliquam repellendus enim maxime fuga maiores dicta neque eligendi laboriosam odit, ad, voluptates, aliquid! Porro nostrum in velit minima modi assumenda sunt odio iusto numquam, ab eos maxime, laudantium sed ad delectus reprehenderit iste. Cumque fugit officia neque debitis, tenetur nobis sequi aspernatur facilis suscipit assumenda iste porro molestiae facere. Ratione explicabo laborum distinctio adipisci libero, minima unde, debitis deleniti, sapiente animi reprehenderit dolorem? Aspernatur atque distinctio praesentium pariatur rem hic itaque quam sint id quae, dolorum corrupti ut nulla explicabo nesciunt commodi fugiat eos eaque neque placeat reprehenderit suscipit, ab beatae laborum. Deleniti earum a, voluptatibus qui voluptates sit odio quod adipisci praesentium consequatur molestias nulla!</span></div>
+        </li>
+        <li>
+          <div class="collapsible-header cyan"><i class="fas fa-cogs fa-4x"></i>Como faço para trabalhar na Startify?</div>
+          <div class="collapsible-body"><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum provident illum laboriosam molestiae, consectetur dolorem eveniet quibusdam minus voluptates iusto adipisci, veniam alias incidunt dicta ab voluptatum perspiciatis esse in dolores. Sit, at ratione! Fugiat aperiam animi voluptate doloribus voluptas in, ut iusto saepe reprehenderit, cupiditate earum quibusdam ullam id, adipisci architecto. Soluta, explicabo laudantium voluptates possimus, inventore quos eos distinctio eum atque rerum autem excepturi quia accusamus iste eaque porro, sequi magnam accusantium voluptate illum repellat dolorum iusto odio? Itaque ab, labore est! In porro voluptates cum vel a reiciendis mollitia laborum voluptas cupiditate adipisci. Quia aliquam porro, consectetur ducimus iste. Inventore consequuntur earum minima cupiditate! Doloremque veritatis quia maiores laudantium quod id quaerat accusamus, minima! Temporibus soluta error perspiciatis nam optio odit deleniti id rerum blanditiis nulla, nisi animi est.</span></div>
+        </li>
+        <li>
+          <div class="collapsible-header cyan"><i class="fas fa-cogs fa-4x"></i>Como faço para trabalhar na Startify?</div>
+          <div class="collapsible-body"><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo quaerat qui culpa earum at consequuntur unde facilis odio omnis beatae, natus obcaecati necessitatibus fuga, officiis quam quia, rerum quos laborum vitae ducimus quibusdam voluptate iusto, cupiditate perferendis eos. Odio, provident, fugit. Fuga cum nesciunt consequatur quidem, dolorem, voluptatem reprehenderit fugiat earum facere quae placeat, mollitia eius temporibus modi asperiores sunt id sapiente praesentium nostrum, alias commodi. Deserunt.</span></div>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <!-- SECTION FAQ -->
+
   <!-- ------ LAST CTA FORM SECTION ------ -->
 
   <section class="section section-form scrollspy">
@@ -449,6 +517,14 @@
        // parallax
        const parallax = document.querySelectorAll('.parallax');
        M.Parallax.init(parallax, {});
+       // acorddion
+       const accordion = document.querySelector('.collapsible.popout');
+       M.Collapsible.init(accordion, {
+         accordion: true
+       });
+       // modal
+       const modal = document.addEventListener('.modal');
+       M.Modal.init(modal, {});
    </script>
 
 </body>

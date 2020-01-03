@@ -35,7 +35,7 @@ html, body {
 .section-clients,
 .section-video {
   min-height: 100vh;
-  padding: 200px 0;
+  margin: 200px 0;
 }
 
 .section-services {
