@@ -9,7 +9,8 @@
 }
 
 html, body {
-  font-family: Prociono, sans-serif;
+  font-family: Inconsolata, sans-serif;
+  /* background: #00bcd4; */
 }
 
 .logo {
@@ -18,3 +19,67 @@ html, body {
   margin-left: 10px;
   margin-top: 5px;
 }
+
+@media only screen and (min-width: 993px) {
+  .container {
+    width: 90% !important;
+  }
+}
+
+/* sections */
+
+.section-cover,
+.section-testimonials,
+.section-team,
+.section-blog,
+.section-clients,
+.section-video {
+  min-height: 100vh;
+  padding: 200px 0;
+}
+
+.section-services {
+  padding: 80px 0;
+}
+
+.icon-block {
+  margin: 30px;
+  padding: 40px;
+  border: cyan 1px solid;
+  border-radius: 5px;
+}
+
+.clients-block {
+  text-align: center;
+  padding: 50px;
+  border: cyan 1px solid;
+  transition: all .3s ease;
+}
+
+/* typograpy */
+
+.pretitle {
+  font-size: .8rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.title {
+  margin-top: 0;
+  color: #fff;
+  margin-bottom: 1.2rem;
+  font-size: 3.4rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.subtitle {
+  margin-bottom: 2.2rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+/* cards */
+
+/* tabs */
