@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    />
+  <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    />
+  <!-- material icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- google fonts Prociono -->
+  <link href="https://fonts.googleapis.com/css?family=Prociono&display=swap" rel="stylesheet">
+  <!-- Compiled and minified CSS -->
+   <link rel="stylesheet" href="../css/materialize.min.css">
+  <!-- custom style -->
+  <link rel="stylesheet" href="../css/ultragallery.css">
+  <title>Ultra Gallery | Criatividade cunhada pelo esforço</title>
+</head>
+<body>
+
+  <!-- ------ NAVIGATION SECTION ------ -->
+
+  <header>
+    <!-- navbar -->
+    <div class="navbar-fixed">
+      <nav class="transparent">
+        <div class="container">
+          <div class="nav-wrapper">
+            <a href="" class="brand-logo">Ultragallery</a>
+            <a href="" data-target="mobile-nav" class="sidenav-trigger">
+              <i class="material-icons">menu</i>
+            </a>
+            <ul class="right hide-on-med-and-down">
+              <!-- <li><a href="#home">Home</a></li>
+              <li><a href="#about">Sobre</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#gallery">Galeria</a></li>
+              <li><a href="#team">Nosso time</a></li>
+              <li><a href="#testimonials">Clientes</a></li>
+              <li><a href="#contact">Contato</a></li> -->
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!-- sidenav -->
+    <ul id="mobile-nav" class="sidenav grey darken-4">
+      <!-- <li><a class="purple-text" href="#home">Home</a></li>
+      <li><a class="purple-text" href="#about">Sobre</a></li>
+      <li><a class="purple-text" href="#projects">Projects</a></li>
+      <li><a class="purple-text" href="#gallery">Galeria</a></li>
+      <li><a class="purple-text" href="#team">Nosso time</a></li>
+      <li><a class="purple-text" href="#testimonials">Clientes</a></li>
+      <li><a class="purple-text" href="#contact">Contato</a></li> -->
+    </ul>
+  </header>
+
+  <!-- XXXXXX NAVIGATION SECTION XXXXX -->
+
+  <!-- ------ SLIDER SECTION ------ -->
+
+  <section id="home" class="section scrollspy">
+    <!-- <div class="container"> -->
+      <div class="row">
+        <div class="col s12 l6 right-align">
+          <h1>Despertar antes da queda</h1>
+          <p>100% das pessoas morrerão. Você morrerá. Aprenda como sobreviver!</p>
+        </div>
+        <div class="col s12 l6">
+          <img src="./assets/common/stock-3.jpg" class="responsive-img z-depth-5 ultra_gallery" alt="img">
+        </div>
+      </div>
+
+      <img src="./assets/common/stock-6.jpg" class="responsive-img z-depth-5" alt="img">
+      <h3 class="light white-text center overlay-text">Aprenda a <span class="overlay-accent">dominar</span> seus <a href="#" class="btn-cta waves-effect">instintos</a></h3>
+
+  </section>
+
+  <!-- XXXXXX SLIDER SECTION XXXXX -->
+
+  <!-- ------ * SECTION ------ -->
+
+  <section class="section section-cta-2">
+    <div class="container">
+      <article >
+        <h1>Conheça o que sempre quiz saber sobre você mesmo!</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, maxime. Sed, saepe.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi sunt quae, expedita aperiam quidem distinctio ullam voluptas in illum necessitatibus molestias, repellendus eligendi.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, maxime. Sed, saepe.</p>
+        <p>Lorem ipsum dolor.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi sunt quae, expedita aperiam quidem distinctio ullam voluptas in illum necessitatibus molestias, repellendus eligendi.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, maxime. Sed, saepe.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus non, dolores illo?Lorem ipsum dolor.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi sunt quae, expedita aperiam quidem distinctio ullam voluptas in illum necessitatibus molestias, repellendus eligendi.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, maxime. Sed, saepe.</p>
+      </article>
+    </div>
+        <img src="./assets/common/stock-2.jpg" alt="img" class="responsive-img z-depth-3">
+        <h3 class="light white-text center overlay-text">Aprenda a <span class="overlay-accent">dominar</span> seus <a href="#" class="btn-cta waves-effect">instintos</a></h3>
+        <img src="./assets/common/stock-5.jpg" alt="img" class="responsive-img z-depth-3">
+        <h3 class="light white-text center overlay-text">Aprenda a <span class="overlay-accent">dominar</span> seus <a href="#" class="btn-cta waves-effect">instintos</a></h3>
+  </section>
+
+  <!-- XXXXXX * SECTION XXXXXX -->
+
+  <!-- ------ * SECTION ------ -->
+  <!-- XXXXXX * SECTION XXXXXX -->
+
+
+  <!-- Compiled and minified JavaScript -->
+   <script src="../js/materialize.min.js"></script>
+   <!-- initialization materialize scripts -->
+   <script type="text/javascript">
+     // SIDENAV
+       const sideNav = document.querySelector('.sidenav');
+       M.Sidenav.init(sideNav, {});
+       // SLIDER
+       const slider = document.querySelector('.slider');
+       M.Slider.init(slider, {
+         indicators: false,
+         height: 600,
+         transition: 500,
+         interval: 6000
+       });
+       // material boxed
+       const materialBoxed = document.querySelectorAll('.materialboxed');
+       M.Materialbox.init(materialBoxed, {});
+       //scrollspy
+       const ss = document.querySelectorAll('.scrollspy');
+       M.ScrollSpy.init(ss, {});
+   </script>
+
+</body>
+</html>

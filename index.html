@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- material icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- google fonts Prociono -->
+  <link href="https://fonts.googleapis.com/css?family=Prociono&display=swap" rel="stylesheet">
+  <!-- Compiled and minified CSS -->
+   <link rel="stylesheet" href="./css/materialize.min.css">
+  <!-- custom style -->
+  <link rel="stylesheet" href="/css/style.css">
+  <title>Desaine | Criatividade cunhada pelo esforço</title>
+</head>
+<body>
+
+  <header>
+    <div class="navbar-fixed">
+      <nav class="grey">
+        <div class="nav-wrapper">
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+          <a href="#" class="brand-logo"><img src="./img/logo.png" class="logo" alt="logo"></a>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="sass.html">Sass</a></li>
+            <li><a href="badges.html">Components</a></li>
+            <li><a href="collapsible.html">JavaScript</a></li>
+          </ul>
+        </div>
+      </nav>
+      <ul class="sidenav" id="mobile-demo">
+        <li><a href="sass.html">Sass</a></li>
+        <li><a href="badges.html">Components</a></li>
+        <li><a href="collapsible.html">JavaScript</a></li>
+      </ul>
+
+    </div>
+  </header>
+
+<div class="container center">
+
+    <h1>TEMPLATES</h1>
+
+    <ul class="collection">
+      <li class="collection-item"><a href="./templates/travel.html">Travelando</a></li>
+      <li class="collection-item"><a href="./templates/agency.html">Desaine.io</a></li>
+      <li class="collection-item"><a href="./templates/photo.html">NinjaPhotos.net</a></li>
+      <li class="collection-item"><a href="./templates/landingpage_app.html">Cell.In</a></li>
+      <li class="collection-item"><a href="./templates/shoportfolio.html">shop.portfol.io</a></li>
+      <li class="collection-item"><a href="./templates/business.html">businext.io</a></li>
+      <li class="collection-item"><a href="./templates/ultragallery.html">Ultra Gallery</a></li>
+      <li class="collection-item"><a href="./templates/restaurant.html">Restau.Rant</a></li>
+    </ul>
+
+    <h1>ELEMENTS</h1>
+
+      <ul class="collection">
+        <li class="collection-item"><a href="./elements/img_overlay.html">img_overlay</a></li>
+        <li class="collection-item"><a href="./elements/pricing.html">pricing</a></li>
+        <li class="collection-item"><a href="./elements/carousel.html">carousel</a></li>
+        <li class="collection-item"><a href="./elements/accordion.html">accordion</a></li>
+        <li class="collection-item"><a href="./elements/cards.html">cards</a></li>
+        <!-- <li class="collection-item"><a href="./templates/travel.html">Travelando</a></li>
+        <li class="collection-item"><a href="./templates/travel.html">Travelando</a></li>
+        <li class="collection-item"><a href="./templates/travel.html">Travelando</a></li> -->
+      </ul>
+
+    </div>
+
+
+  <!-- Compiled and minified JavaScript -->
+   <script src="./js/materialize.min.js"></script>
+   <!-- initialization materialize scripts -->
+   <script type="text/javascript">
+     // document.addEventListener('DOMContentLoaded', function() {
+     //   var elems = document.querySelectorAll('.sidenav');
+     //   var instances = M.Sidenav.init(elems, options);
+     // });
+     $(document).ready(function(){
+       $('.sidenav').sidenav();
+     });
+     // var instance = M.Carousel.init({
+     //    fullWidth: true
+     //  });
+   </script>
+
+</body>
+</html>

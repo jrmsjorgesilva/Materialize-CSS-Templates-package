@@ -1,0 +1,229 @@
+/* MATERIALIZE */
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: Lato, sans-serif;
+  background-color: #303030;
+  background-image: url("../templates/assets/img-business/svg_pattern_1.svg");
+  /* background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='99' height='49.5' viewBox='0 0 99 49.5'%3E%3Cdefs%3E%3Crect stroke='%23303030' stroke-width='0.45' width='1' height='1' id='s'/%3E%3Cpattern id='a' width='2' height='2' patternUnits='userSpaceOnUse'%3E%3Cg stroke='%23303030' stroke-width='0.45'%3E%3Crect fill='%23343434' width='1' height='1'/%3E%3Crect fill='%23303030' width='1' height='1' x='1' y='1'/%3E%3Crect fill='%23383838' width='1' height='1' y='1'/%3E%3Crect fill='%233c3c3c' width='1' height='1' x='1'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='b' width='5' height='11' patternUnits='userSpaceOnUse'%3E%3Cg fill='%23414141'%3E%3Cuse xlink:href='%23s' x='2' y='0'/%3E%3Cuse xlink:href='%23s' x='4' y='1'/%3E%3Cuse xlink:href='%23s' x='1' y='2'/%3E%3Cuse xlink:href='%23s' x='2' y='4'/%3E%3Cuse xlink:href='%23s' x='4' y='6'/%3E%3Cuse xlink:href='%23s' x='0' y='8'/%3E%3Cuse xlink:href='%23s' x='3' y='9'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='c' width='7' height='7' patternUnits='userSpaceOnUse'%3E%3Cg fill='%23454545'%3E%3Cuse xlink:href='%23s' x='1' y='1'/%3E%3Cuse xlink:href='%23s' x='3' y='4'/%3E%3Cuse xlink:href='%23s' x='5' y='6'/%3E%3Cuse xlink:href='%23s' x='0' y='3'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='d' width='11' height='5' patternUnits='userSpaceOnUse'%3E%3Cg fill='%23303030'%3E%3Cuse xlink:href='%23s' x='1' y='1'/%3E%3Cuse xlink:href='%23s' x='6' y='3'/%3E%3Cuse xlink:href='%23s' x='8' y='2'/%3E%3Cuse xlink:href='%23s' x='3' y='0'/%3E%3Cuse xlink:href='%23s' x='0' y='3'/%3E%3C/g%3E%3Cg fill='%23494949'%3E%3Cuse xlink:href='%23s' x='8' y='3'/%3E%3Cuse xlink:href='%23s' x='4' y='2'/%3E%3Cuse xlink:href='%23s' x='5' y='4'/%3E%3Cuse xlink:href='%23s' x='10' y='0'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='e' width='47' height='23' patternUnits='userSpaceOnUse'%3E%3Cg fill='%239dbb3e'%3E%3Cuse xlink:href='%23s' x='2' y='5'/%3E%3Cuse xlink:href='%23s' x='23' y='13'/%3E%3Cuse xlink:href='%23s' x='4' y='18'/%3E%3Cuse xlink:href='%23s' x='35' y='9'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='f' width='61' height='31' patternUnits='userSpaceOnUse'%3E%3Cg fill='%239dbb3e'%3E%3Cuse xlink:href='%23s' x='16' y='0'/%3E%3Cuse xlink:href='%23s' x='13' y='22'/%3E%3Cuse xlink:href='%23s' x='44' y='15'/%3E%3Cuse xlink:href='%23s' x='12' y='11'/%3E%3C/g%3E%3C/pattern%3E%3C/defs%3E%3Crect fill='url(%23a)' width='99' height='49.5'/%3E%3Crect fill='url(%23b)' width='99' height='49.5'/%3E%3Crect fill='url(%23c)' width='99' height='49.5'/%3E%3Crect fill='url(%23d)' width='99' height='49.5'/%3E%3Crect fill='url(%23e)' width='99' height='49.5'/%3E%3Crect fill='url(%23f)' width='99' height='49.5'/%3E%3C/svg%3E"); */
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.logo {
+  max-width: 140px;
+  max-height: 140px;
+  margin-left: 10px;
+  margin-top: 5px;
+}
+
+/* sections */
+
+header {
+    min-height: 100vh;
+}
+
+.section-about {
+    min-height: 100vh;
+    background-image: url("../templates/assets/img-business/business-img-5.jpg") !important;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.section-features {
+  min-height: 100vh;
+}
+
+.section-portfolio {
+  min-height: 100vh;
+}
+
+.section-features-separator {
+  /* min-height: 100vh; */
+  padding: 0;
+}
+
+.section-team {
+  min-height: 100vh;
+  /* padding-top: 200px; */
+}
+
+.section-accordion {
+  min-height: 70vh;
+}
+
+.section-footer {
+  min-height: 30vh;
+  padding: 0;
+}
+
+.__carousel-features-background-1 {
+  background-image: url("../templates/assets/img-business/business-img-2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.__carousel-features-background-2 {
+    background-image: url("../templates/assets/img-business/business-img-5.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.__carousel-features-background-3 {
+    background-image: url("../templates/assets/img-business/business-img-6.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+/* navigation */
+
+/* buttons */
+
+/* tabs */
+
+.tabs .indicator {
+  background-color: #cddc39;
+}
+
+.tabs .tab a:focus, .tabs .tab a:focus.active {
+  background: transparent;
+}
+
+/* team */
+
+.__img_team {
+  position: absolute;
+  left: 35%;
+  top: -20%;
+  transform: translateX(-50% -50%) translateY(-50% -50%);
+  max-width: 100px;
+  max-height: 100px;
+}
+
+.card-team {
+  position: relative;
+  padding: 20px;
+  background: #cddc39;
+  border-top-left-radius: 10%;
+  border-top-right-radius: 10%;
+}
+
+/* accordion */
+
+.accordion {
+  background: transparent;
+  width: 100%;
+  min-width: 800px;
+  display: block;
+  list-style-type: none;
+  overflow: hidden;
+  height: 200px;
+  font-size: 0;
+
+}
+
+.tab {
+  display: inline-block;
+  background-color: #444;
+  border-right: #cddc39 solid 1px;
+  width: 80px;
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+  margin: 0;
+  transition: all .5s ease .2s;
+}
+
+.tab:hover {
+  width: 450px;
+}
+
+.tab .content {
+  background: #aaa;
+  width: 360px;
+  height: 200px;
+  margin-left: 80px;
+  position: relative;
+  padding: 50px 0 0 15px;
+}
+
+.tab .content h1 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.tab .content p {
+  font-size: 0.85rem;
+  line-height: 1.4rem;
+  padding-right: 30px;
+}
+
+/* form */
+
+
+@media (max-width: 950px) {
+  /* .container {
+    width: 70%;
+  } */
+
+  .tab {
+    display: block;
+    width: 100%;
+    border-bottom: 3px #333 solid;
+  }
+
+  .accordion {
+    display: block;
+    min-width: 300px;
+    height: auto;
+  }
+
+  .tab .content {
+    width: 85%;
+  }
+}
+
+/* media queries */
+
+@media (max-width: 950px) {
+  * {
+    text-align: center;
+  }
+
+  .btn {
+    margin-bottom: 10px;
+  }
+
+  .icon-block {
+    margin-bottom: 30px;
+  }
+
+  .tab .case {
+    font-size: 0px;
+  }
+
+  .card-team {
+    margin-bottom: 100px;
+  }
+
+  .tab:hover {
+    width: 340px;
+  }
+
+  .tab .content h1 {
+    font-size: .8rem;
+  }
+
+  .tab .content p {
+    font-size: .6rem;
+  }
+}
