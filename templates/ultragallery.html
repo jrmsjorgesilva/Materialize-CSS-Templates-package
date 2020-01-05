@@ -31,7 +31,7 @@
   <header>
     <!-- navbar -->
     <div class="navbar-fixed">
-      <nav class="transparent">
+      <nav class="green darken-4">
         <div class="container">
           <div class="nav-wrapper">
             <a href="" class="brand-logo">Ultragallery</a>
@@ -39,13 +39,13 @@
               <i class="material-icons">menu</i>
             </a>
             <ul class="right hide-on-med-and-down">
-              <!-- <li><a href="#home">Home</a></li>
+              <li><a href="#home" onclick="home();">Home</a></li>
               <li><a href="#about">Sobre</a></li>
               <li><a href="#projects">Projects</a></li>
               <li><a href="#gallery">Galeria</a></li>
               <li><a href="#team">Nosso time</a></li>
               <li><a href="#testimonials">Clientes</a></li>
-              <li><a href="#contact">Contato</a></li> -->
+              <li><a href="#contact">Contato</a></li>
             </ul>
           </div>
         </div>
@@ -53,13 +53,16 @@
     </div>
     <!-- sidenav -->
     <ul id="mobile-nav" class="sidenav grey darken-4">
-      <!-- <li><a class="purple-text" href="#home">Home</a></li>
+      <li><a href="#home" onclick="home();">Home</a></li>
+      <li><a href="#about">Sobre</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a class="purple-text" href="#home">Home</a></li>
       <li><a class="purple-text" href="#about">Sobre</a></li>
       <li><a class="purple-text" href="#projects">Projects</a></li>
       <li><a class="purple-text" href="#gallery">Galeria</a></li>
       <li><a class="purple-text" href="#team">Nosso time</a></li>
       <li><a class="purple-text" href="#testimonials">Clientes</a></li>
-      <li><a class="purple-text" href="#contact">Contato</a></li> -->
+      <li><a class="purple-text" href="#contact">Contato</a></li>
     </ul>
   </header>
 
@@ -67,8 +70,7 @@
 
   <!-- ------ SLIDER SECTION ------ -->
 
-  <section id="home" class="section scrollspy">
-    <!-- <div class="container"> -->
+  <!-- <section id="home" class="section scrollspy">
       <div class="row">
         <div class="col s12 l6 right-align">
           <h1>Despertar antes da queda</h1>
@@ -82,31 +84,29 @@
       <img src="./assets/common/stock-6.jpg" class="responsive-img z-depth-5" alt="img">
       <h3 class="light white-text center overlay-text">Aprenda a <span class="overlay-accent">dominar</span> seus <a href="#" class="btn-cta waves-effect">instintos</a></h3>
 
-  </section>
+  </section> -->
 
   <!-- XXXXXX SLIDER SECTION XXXXX -->
 
   <!-- ------ * SECTION ------ -->
 
-  <section class="section section-cta-2">
-    <div class="container">
-      <article >
-        <h1>Conheça o que sempre quiz saber sobre você mesmo!</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, maxime. Sed, saepe.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi sunt quae, expedita aperiam quidem distinctio ullam voluptas in illum necessitatibus molestias, repellendus eligendi.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, maxime. Sed, saepe.</p>
-        <p>Lorem ipsum dolor.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi sunt quae, expedita aperiam quidem distinctio ullam voluptas in illum necessitatibus molestias, repellendus eligendi.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, maxime. Sed, saepe.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus non, dolores illo?Lorem ipsum dolor.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi sunt quae, expedita aperiam quidem distinctio ullam voluptas in illum necessitatibus molestias, repellendus eligendi.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, maxime. Sed, saepe.</p>
-      </article>
-    </div>
-        <img src="./assets/common/stock-2.jpg" alt="img" class="responsive-img z-depth-3">
-        <h3 class="light white-text center overlay-text">Aprenda a <span class="overlay-accent">dominar</span> seus <a href="#" class="btn-cta waves-effect">instintos</a></h3>
-        <img src="./assets/common/stock-5.jpg" alt="img" class="responsive-img z-depth-3">
-        <h3 class="light white-text center overlay-text">Aprenda a <span class="overlay-accent">dominar</span> seus <a href="#" class="btn-cta waves-effect">instintos</a></h3>
+  <section id="home" data-index="0" class="section-home hide">
+    <h2>Home</h2>
   </section>
-
   <!-- XXXXXX * SECTION XXXXXX -->
 
   <!-- ------ * SECTION ------ -->
+  <section id="projects" data-index="1" class="section-projects hide">
+    <h2>Projects</h2>
+
+  </section>
+  <!-- XXXXXX * SECTION XXXXXX -->
+
+  <!-- ------ * SECTION ------ -->
+  <section id="contact" data-index="2" class="section-contacts hide">
+    <h2>Contato</h2>
+
+  </section>
   <!-- XXXXXX * SECTION XXXXXX -->
 
 
@@ -131,6 +131,61 @@
        //scrollspy
        const ss = document.querySelectorAll('.scrollspy');
        M.ScrollSpy.init(ss, {});
+   </script>
+   <script>
+
+    function home() {
+      // const homeClass = document.querySelector('.section-home');
+      // console.log(homeClass);
+      // if (homeclass == 'section-home hide') {
+      //   document.getElementById("home").classList.remove("hide");
+      // } else {
+      //   document.getElementById("home").classList.add("hide");
+      // }
+      document.getElementById("home").classList.remove("hide");
+    }
+
+     // const sections = document.querySelectorAll('section');
+     // const secret = document.querySelector('.secret');
+     // const gradients = [
+     //   "linear-gradient(to right, #3f2b96, #a8c0ff)",
+     //   "linear-gradient(to right, #f80759, #bc4e9c)",
+     //   "linear-gradient(to right, #38ef7d, #11998e)"
+     // ];
+     //
+     // const options = {
+     //   threshold: 0.7
+     // };
+     //
+     // let observer = new IntersectionObserver(navCheck, options);
+     //
+     // function navCheck(entries) {
+     //   entries.forEach(entry => {
+     //     const className = entry.target.className;
+     //     const activeAnchor = document.querySelector(`[data-page=${className}]`);
+     //     const gradientIndex = entry.target.getAttribute('data-index');
+     //     const coords = activeAnchor.getBoundingClientRect();
+     //     const directions = {
+     //       left: coords.left,
+     //       top: coords.top,
+     //       width: coords.width,
+     //       height: coords.height
+     //     };
+     //
+     //     if (entry.isIntersecting) {
+     //       secret.style.setProperty('left', `${directions.left}px`);
+     //       secret.style.setProperty('top', `${directions.top}px`);
+     //       secret.style.setProperty('width', `${directions.width}px`);
+     //       secret.style.setProperty('height', `${directions.height}px`);
+     //       secret.style.background = gradients[gradientIndex];
+     //     }
+     //   });
+     // }
+     //
+     // sections.forEach(section => {
+     //   observer.observe(section);
+     // });
+
    </script>
 
 </body>
