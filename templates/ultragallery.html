@@ -39,20 +39,22 @@
               <i class="material-icons">menu</i>
             </a>
             <ul class="right hide-on-med-and-down">
-              <li><a href="#home" onclick="home();">Home</a></li>
+              <li><a onclick="prev();"><i class="white-text fas fa-chevron-left fa-2x"></i></a></li>
+              <li><a onclick="next();"><i class="white-text fas fa-chevron-right fa-2x"></i></a></li>
+              <!-- <li><a href="#home" onclick="home();">Home</a></li>
               <li><a href="#about">Sobre</a></li>
               <li><a href="#projects">Projects</a></li>
               <li><a href="#gallery">Galeria</a></li>
               <li><a href="#team">Nosso time</a></li>
               <li><a href="#testimonials">Clientes</a></li>
-              <li><a href="#contact">Contato</a></li>
+              <li><a href="#contact">Contato</a></li> -->
             </ul>
           </div>
         </div>
       </nav>
     </div>
     <!-- sidenav -->
-    <ul id="mobile-nav" class="sidenav grey darken-4">
+    <!-- <ul id="mobile-nav" class="sidenav grey darken-4">
       <li><a href="#home" onclick="home();">Home</a></li>
       <li><a href="#about">Sobre</a></li>
       <li><a href="#projects">Projects</a></li>
@@ -63,12 +65,45 @@
       <li><a class="purple-text" href="#team">Nosso time</a></li>
       <li><a class="purple-text" href="#testimonials">Clientes</a></li>
       <li><a class="purple-text" href="#contact">Contato</a></li>
-    </ul>
+    </ul> -->
   </header>
 
   <!-- XXXXXX NAVIGATION SECTION XXXXX -->
 
   <!-- ------ SLIDER SECTION ------ -->
+
+  <div class="slider">
+    <ul class="slides">
+      <li>
+        <img src="./assets/common/stock-3.jpg"> <!-- random image -->
+        <div class="caption center-align">
+          <h3>This is our big Tagline!</h3>
+          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+        </div>
+      </li>
+      <li>
+        <img src="./assets/common/stock-5.jpg"> <!-- random image -->
+        <div class="caption left-align">
+          <h3>Left Aligned Caption</h3>
+          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+        </div>
+      </li>
+      <li>
+        <img src="./assets/common/stock-6.jpg"> <!-- random image -->
+        <div class="caption right-align">
+          <h3>Right Aligned Caption</h3>
+          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+        </div>
+      </li>
+      <li>
+        <img src="./assets/common/stock-7.jpg"> <!-- random image -->
+        <div class="caption center-align">
+          <h3>This is our big Tagline!</h3>
+          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+        </div>
+      </li>
+    </ul>
+  </div>
 
   <!-- <section id="home" class="section scrollspy">
       <div class="row">
@@ -90,23 +125,23 @@
 
   <!-- ------ * SECTION ------ -->
 
-  <section id="home" data-index="0" class="section-home hide">
+  <!-- <section id="home" data-index="0" class="section-home hide">
     <h2>Home</h2>
-  </section>
+  </section> -->
   <!-- XXXXXX * SECTION XXXXXX -->
 
   <!-- ------ * SECTION ------ -->
-  <section id="projects" data-index="1" class="section-projects hide">
+  <!-- <section id="projects" data-index="1" class="section-projects hide">
     <h2>Projects</h2>
 
-  </section>
+  </section> -->
   <!-- XXXXXX * SECTION XXXXXX -->
 
   <!-- ------ * SECTION ------ -->
-  <section id="contact" data-index="2" class="section-contacts hide">
+  <!-- <section id="contact" data-index="2" class="section-contacts hide">
     <h2>Contato</h2>
 
-  </section>
+  </section> -->
   <!-- XXXXXX * SECTION XXXXXX -->
 
 
@@ -120,11 +155,23 @@
        // SLIDER
        const slider = document.querySelector('.slider');
        M.Slider.init(slider, {
-         indicators: false,
+         indicators: true,
          height: 600,
          transition: 500,
-         interval: 6000
+         interval: 600000000
        });
+       function next() {
+         const slide = M.Slider.getInstance(slider);
+         slide.next();
+         slide.next();
+         slide.next();
+         // M.Slider.pause();
+       }
+       function prev() {
+         const slide = M.Slider.getInstance(slider);
+         slide.prev();
+         // M.Slider.pause();
+       }
        // material boxed
        const materialBoxed = document.querySelectorAll('.materialboxed');
        M.Materialbox.init(materialBoxed, {});
@@ -134,7 +181,7 @@
    </script>
    <script>
 
-    function home() {
+    // function home() {
       // const homeClass = document.querySelector('.section-home');
       // console.log(homeClass);
       // if (homeclass == 'section-home hide') {
@@ -142,8 +189,8 @@
       // } else {
       //   document.getElementById("home").classList.add("hide");
       // }
-      document.getElementById("home").classList.remove("hide");
-    }
+      // document.getElementById("home").classList.remove("hide");
+    // }
 
      // const sections = document.querySelectorAll('section');
      // const secret = document.querySelector('.secret');
